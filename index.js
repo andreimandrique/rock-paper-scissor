@@ -56,8 +56,6 @@ function playGame(playerSelection, computerSelection){
             scoreDisplay.innerHTML = `Score: ${score}`;
             statusDisplay.innerText = 'You lose';
         }
-
-    return output;
 }
 
 rock.addEventListener("click", ()=>{
