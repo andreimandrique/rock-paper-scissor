@@ -35,8 +35,6 @@ let round = 0;
 
 function playGame(playerSelection, computerSelection){
 
-    let output;
-
     if((playerSelection=='rock'&&computerSelection=='scissor')||
         (playerSelection=='paper'&&computerSelection=='rock')||
         (playerSelection=='scissor'&&computerSelection=='paper')){
@@ -58,8 +56,6 @@ function playGame(playerSelection, computerSelection){
             scoreDisplay.innerHTML = `Score: ${score}`;
             statusDisplay.innerText = 'You lose';
         }
-
-    return output;
 }
 
 rock.addEventListener("click", ()=>{
