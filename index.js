@@ -36,13 +36,3 @@ function playGame(playerSelection, computerSelection){
 
     return output;
 }
-
-for(let i=1;i<=5;++i){
-    const computerSelection = getComputerChoice();
-    const playerSelection = prompt("Enter rock,paper or scissor").toLowerCase();
-    const output = playGame(playerSelection,computerSelection);
-    console.log(`Round ${i}`)
-    console.log(`Player: ${playerSelection}`);
-    console.log(`Computer: ${computerSelection}`);
-    console.log(output);
-}   
