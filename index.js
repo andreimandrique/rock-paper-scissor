@@ -102,8 +102,4 @@ resetDisplay.addEventListener("click", ()=>{
 
     score = 0;
     round = 0;
-<<<<<<< HEAD
 })
-=======
-})
->>>>>>> 5dd2fac316f87c284594e1e9f50acb4da92598ac
