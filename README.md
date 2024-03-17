@@ -1,4 +1,2 @@
 # rock-paper-scissor
- I add GUI to the TOD rock-paper-scissor
-press f12 to go to consolo.log
-You see the output there
+ 3rd Project of The Odin Project Course 
