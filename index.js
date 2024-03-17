@@ -1,3 +1,4 @@
+//make a function getComputerChoice that return rock,paper or scissor
 function getComputerChoice(){
 
     const randomNum = Math.floor(Math.random()* 3 +1);
@@ -19,10 +20,12 @@ function getComputerChoice(){
     return computer;
 }
 
+//get rock,paper and scissor button
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissor = document.getElementById("scissor");
 
+//get all the Display
 const roundDisplay = document.getElementById("roundDisplay");
 const scoreDisplay = document.getElementById("scoreDisplay");
 const playerDisplay = document.getElementById("playerDisplay");
@@ -30,9 +33,11 @@ const computerDisplay = document.getElementById("computerDisplay");
 const statusDisplay = document.getElementById("statusDisplay");
 const resetDisplay = document.getElementById("resetDisplay");
 
+//make a variable for score and round
 let score = 0;
 let round = 0;
 
+//make a function that play the game taking 2 parameter the player and the computer
 function playGame(playerSelection, computerSelection){
 
     if((playerSelection=='rock'&&computerSelection=='scissor')||
@@ -58,6 +63,7 @@ function playGame(playerSelection, computerSelection){
         }
 }
 
+//add event listener to the rock,paper and scissor button
 rock.addEventListener("click", ()=>{
     let player = 'rock';
     const computer = getComputerChoice();
@@ -79,11 +85,13 @@ scissor.addEventListener("click", ()=>{
     displayPlayerComputer(player, computer);
 })
 
+//display the player choice and the computer choice
 function displayPlayerComputer(playerSelectionDisplay, computerSelectionDisplay){
     playerDisplay.innerText = `Player: ${playerSelectionDisplay}`;
     computerDisplay.innerText = `Computer: ${computerSelectionDisplay}`;
 }
 
+//add event listener to the reset button resetting the display and the game
 resetDisplay.addEventListener("click", ()=>{
     
     roundDisplay.innerText = "Round:";
