@@ -94,5 +94,4 @@ resetDisplay.addEventListener("click", ()=>{
 
     score = 0;
     round = 0;
-
 })
